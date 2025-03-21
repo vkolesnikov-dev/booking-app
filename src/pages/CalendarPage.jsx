@@ -1,5 +1,7 @@
+import AppLayout from "../components/AppLayout";
+
 const CalendarPage = () => {
-  return "It is Calendar Page";
+  return <AppLayout />;
 };
 
 export default CalendarPage;

@@ -4,6 +4,7 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
+import { NavLink } from "react-router-dom";
 
 const AppHeader = () => {
   return (
@@ -17,13 +18,15 @@ const AppHeader = () => {
           >
             Meeting-scheduler
           </Typography>
-          <Button sx={{ marginRight: 10 }} color="inherit">
+          <NavLink className={"header-link"} to={"/"}>
             Home
-          </Button>
-          <Button sx={{ marginRight: 130 }} color="inherit">
+          </NavLink>
+          <NavLink className={"header-link"} to={"/calendar"}>
             Calendar
+          </NavLink>
+          <Button sx={{ marginLeft: 130 }} color="inherit">
+            Login
           </Button>
-          <Button color="inherit">Login</Button>
         </Toolbar>
       </AppBar>
     </Box>
