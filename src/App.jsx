@@ -1,5 +1,11 @@
+import AppRoutes from "./routes/routes";
+
 function App() {
-  return "Hello world!";
+  return (
+    <>
+      <AppRoutes />
+    </>
+  );
 }
 
 export default App;
