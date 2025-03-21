@@ -1,5 +1,7 @@
+import AppLogin from "../components/AppLogin";
+
 const LoginPage = () => {
-  return "It is Login Page";
+  return <AppLogin />;
 };
 
 export default LoginPage;
