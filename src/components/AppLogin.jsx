@@ -27,11 +27,12 @@ const AppLogin = () => {
 
   return (
     <div className="login-form border max-w-96 m-auto mt-20 p-10">
-      <h2 className="title-login">Вход</h2>
+      <h2 className="text-sky-500 font-bold text-center mb-5">Вход</h2>
       <form onSubmit={handleSubmit(onSubmit)}>
-        <div>
+        <div className="flex flex-col items-center gap-5">
           <label>Email:</label>
           <input
+            className="p-3 border-solid border-2"
             type="email"
             {...register("email", {
               required: "Email обязателен",
@@ -47,9 +48,10 @@ const AppLogin = () => {
           )}
         </div>
 
-        <div>
-          <label>Пароль:</label>
+        <div className="flex flex-col items-center gap-5">
+          <label className="mt-5">Пароль:</label>
           <input
+            className="p-3 border-solid border-2"
             type="password"
             {...register("password", {
               required: "Пароль обязателен",
@@ -65,10 +67,15 @@ const AppLogin = () => {
           )}
         </div>
 
-        <button type="submit">Войти</button>
+        <button className="m-0 m-auto block mt-5" type="submit">
+          Войти
+        </button>
 
-        <p className="register-link">
-          Нет аккаунта? <a href="/register">Зарегистрироваться</a>
+        <p className="register-link mt-5 text-center">
+          Нет аккаунта?{" "}
+          <a className="text-blue-500" href="/register">
+            Зарегистрироваться
+          </a>
         </p>
       </form>
     </div>
