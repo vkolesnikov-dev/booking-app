@@ -1,4 +1,5 @@
 import { useForm } from "react-hook-form";
+import "./../assets/styles/global.css";
 
 const AppLogin = () => {
   const {
@@ -25,8 +26,8 @@ const AppLogin = () => {
   };
 
   return (
-    <div className="login-form">
-      <h2>Вход</h2>
+    <div className="login-form border max-w-96 m-auto mt-20 p-10">
+      <h2 className="title-login">Вход</h2>
       <form onSubmit={handleSubmit(onSubmit)}>
         <div>
           <label>Email:</label>
