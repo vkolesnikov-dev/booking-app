@@ -1,5 +1,4 @@
 import { useForm } from "react-hook-form";
-import "./../assets/styles/global.css";
 
 const AppLogin = () => {
   const {
@@ -67,13 +66,16 @@ const AppLogin = () => {
           )}
         </div>
 
-        <button className="m-0 m-auto block mt-5" type="submit">
+        <button
+          className="m-0 m-auto block mt-5  bg-blue-500 p-2 border text-white"
+          type="submit"
+        >
           Войти
         </button>
 
         <p className="register-link mt-5 text-center">
           Нет аккаунта?{" "}
-          <a className="text-blue-500" href="/register">
+          <a className="text-blue-500" href="/login">
             Зарегистрироваться
           </a>
         </p>
